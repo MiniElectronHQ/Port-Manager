@@ -1,0 +1,242 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+}
+
+.bg-dark {
+  background: #f9f9f9;
+}
+
+.border-dark {
+  border-color: #eee;
+}
+
+.form-control {
+  padding: 6px 13px;
+  font-weight: 400;
+  background: #fff;
+  color: #333;
+  font-weight: 600;
+  font-size: 21px;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 7px 14px;
+  font-weight: 600;
+  color: #555;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 13px;
+  transition: all 0.1s ease-in;
+}
+
+.btn.large {
+  font-size: 21px;
+}
+.btn.primary {
+  background: #ea4c89;
+  color: #fff;
+}
+
+.btn-selected {
+  background: #f3f9fe;
+  color: #168af8;
+}
+
+.can-drag {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+.logo-color {
+  color: #f26651;
+}
+
+.content-body {
+  width: 100%;
+  height: calc(100vh - 80px);
+  overflow-x: hidden;
+}
+
+.m-w-half {
+  max-width: 80%;
+}
+/*  */
+
+.close {
+  position: absolute;
+  right: 12px;
+  top: 13px;
+  width: 33px;
+  height: 33px;
+  /* position: relative; */
+  opacity: 0.3;
+  z-index: 9999;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  content: '   ';
+  height: 23px;
+  width: 5px;
+  border-radius: 2px;
+  z-index: 9999;
+  background-color: #fff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.toolbar-drag {
+  width: 90%;
+  height: 50px;
+  margin-right: 100px;
+  z-index: 0;
+}
+
+/*  */
+
+.file {
+  background: #eee;
+  background: -moz-linear-gradient(
+    top,
+    #ddd 0,
+    #eee 15%,
+    #fff 40%,
+    #fff 70%,
+    #eee 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #ddd 0,
+    #eee 15%,
+    #fff 40%,
+    #fff 70%,
+    #eee 100%
+  );
+  border: 1px solid #ccc;
+  -moz-border-radius: 3px 15px 3px 3px;
+  -webkit-border-radius: 3px 15px 3px 3px;
+  border-radius: 3px 15px 3px 3px;
+  -moz-box-shadow: inset rgba(255, 255, 255, 0.8) 0 1px 1px;
+  -webkit-box-shadow: inset rgba(255, 255, 255, 0.8) 0 1px 1px;
+  box-shadow: inset rgba(255, 255, 255, 0.8) 0 1px 1px;
+  display: inline-block;
+  width: 20px;
+  height: 25px;
+  position: relative;
+  text-indent: -9999em;
+  margin-bottom: -8px;
+  margin-top: 12px;
+}
+.file:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  background: -moz-linear-gradient(45deg, #fff 0, #eee 50%, #ccc 100%);
+  background: -webkit-linear-gradient(45deg, #fff 0, #eee 50%, #ccc 100%);
+  box-shadow: rgba(0, 0, 0, 0.05) -1px 1px 1px, inset white 0 0 1px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  -moz-border-radius: 0 14px 0 0;
+  -webkit-border-radius: 0 14px 0 0;
+  border-radius: 0 10px 0 0;
+}
+
+.file:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+  margin: 10px 20% 0;
+  background: #ccc;
+  background: -moz-linear-gradient(
+    top,
+    #ccc 0,
+    #ccc 20%,
+    #fff 20%,
+    #fff 40%,
+    #ccc 40%,
+    #ccc 60%,
+    #fff 60%,
+    #fff 80%,
+    #ccc 80%,
+    #ccc 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #ccc 0,
+    #ccc 20%,
+    #fff 20%,
+    #fff 40%,
+    #ccc 40%,
+    #ccc 60%,
+    #fff 60%,
+    #fff 80%,
+    #ccc 80%,
+    #ccc 100%
+  );
+  height: 8px;
+}
+
+.folder {
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  background-color: #708090;
+  border-radius: 0 3px 3px 3px;
+  /*box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);*/
+  margin-bottom: -8px;
+  margin-top: 12px;
+}
+
+.folder:before {
+  content: '';
+  width: 50%;
+  height: 0.2em;
+  border-radius: 0 20px 0 0;
+  background-color: #708090;
+  position: absolute;
+  top: -0.2em;
+  left: 0px;
+}
+
+/*  */
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #111;
+}
